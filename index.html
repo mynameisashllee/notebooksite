@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>scribbles on a page</title>
+  <style>
+    @font-face {
+      font-family: "myfont";
+      src: url("MyFont-Regular.ttf");
+    }
+
+    @font-face {
+      font-family: "normalfont";
+      src: url("Normalfont-Regular.ttf");
+    }
+
+    body {
+      margin: 0;
+      background: white;
+      font-family: "normalfont", sans-serif;
+      font-size: 30px;
+    }
+
+    .titles {
+      font-family: "myfont", sans-serif;
+      font-size: 50px;
+    }
+
+    .notebook {
+      position: relative;
+      width: 100%;
+      min-height: 100vh;
+      background-color: white;
+    }
+
+    .notebook::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 60px;
+
+      background-image: url("red-line.png");
+      background-repeat: repeat-y;
+      background-size: contain;
+      background-position: center;
+      width: auto;
+      min-width: 20px;
+    }
+
+
+    .line-space {
+      position: relative;
+      padding: 20px 20px 20px 80px;
+      min-height: 80px;
+      box-sizing: border-box;
+
+      background-image:
+        url("blue-line.png");
+      background-repeat: no-repeat, no-repeat;
+      background-position: left bottom;
+      background-size: 100% auto;
+    }
+
+    #redline {
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+  <div class="notebook">
+    <div class="line-space"></div>
+    <div class="line-space titles">Cool Internet Things</div>
+
+    <div class="line-space">GAMES</div>
+    <div class="line-space"><a href="https://jzwood.science/legerdemain/tutorial">https://jzwood.science/legerdemain/tutorial</a></div>
+    <div class="line-space"><a href="https://www.coolmathgames.com/0-mini-metro-london">https://www.coolmathgames.com/0-mini-metro-london</a></div>
+    <div class="line-space"><a href="https://www.sbnation.com/a/17776-football">https://www.sbnation.com/a/17776-football</a></div>
+    <div class="line-space"></div>
+
+    <div class="line-space">SITES (personal/otherwise)</div>
+    <div class="line-space"><a href="https://ribo.zone/">https://ribo.zone/</a></div>
+    <div class="line-space"><a href="https://juneish.neocities.org/">https://juneish.neocities.org/</a></div>
+    <div class="line-space"><a href="https://xkcd.com">https://xkcd.com</a></div>
+    <div class="line-space"></div>
+
+    <div class="line-space">SOCIAL MEDIA PAGES</div>
+    <div class="line-space"><a href="https://nostalgebraist-autoresponder.tumblr.com">https://nostalgebraist-autoresponder.tumblr.com</a></div>
+    <div class="line-space"><a href="https://oldwindowsicons.tumblr.com/">https://oldwindowsicons.tumblr.com/</a></div>
+    <div class="line-space"><a href="https://www.instagram.com/o3c.ltd/">https://www.instagram.com/o3c.ltd/</a></div>
+    <div class="line-space"><a href="https://www.instagram.com/depthsofwikipedia/">https://www.instagram.com/depthsofwikipedia/</a></div>
+    <div class="line-space"></div>
+    
+    <div class="line-space">TOOLS</div>
+    <div class="line-space"><a href="http://boilthefrog.playlistmachinery.com">http://boilthefrog.playlistmachinery.com</a></div>
+    <div class="line-space"><a href="https://web.archive.org/">https://web.archive.org/</a></div>
+    <div class="line-space"><a href="https://www.sentyfont.com/download.htm">https://www.sentyfont.com/download.htm</a></div>
+    <div class="line-space"></div>
+
+    <div class="line-space titles">Fun Youtube Videos</div>
+    <div class="line-space">CHANNELS</div>
+    <div class="line-space"><a href="https://www.youtube.com/@AtomicShrimp">atomic shrimp makes really funny scamming the scammer videos</a></div>
+    <div class="line-space"><a href="https://www.youtube.com/@bobbybroccoli">academic fraud videos!</a></div>
+    <div class="line-space"><a href="https://www.youtube.com/@xkcd_whatif">xkcd never fails</a></div>
+    <div class="line-space"><a href="https://www.youtube.com/@HBMmaster">jan misali makes videos about linguistics and other cool stuff</a></div>
+    <div class="line-space"><a href="https://www.youtube.com/@RationalAnimations">videos about ai safety and tech with really nice art</a></div>
+    <div class="line-space"></div>
+
+    <div class="line-space">VIDEOS</div>
+    <div class="line-space"><a href="https://www.youtube.com/watch_videos?video_ids=rC2VQ-oyDG0,A8zWWp0akUU,QNFQvX-MQgI,Cxm4qaGTB0M,_HSYTIEXa5w,Qs2cHV6VU8c,jVpsLMCIB0Y,RcVA8Nj6HEo,rWjUS2h2BfU,F4KQ8wBt1Qg,vJ_pEP3fRvM,twHFPMoJNXE,UD4_CaTufIU,qDkIUWAYlEk,N5Fj3YVok6U">I hope this link doesn't break</a></div>
+    <div class="line-space"></div>
+
+    <div class="line-space titles">Nice Jams</div>
+    <div class="line-space"><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/artist/1co4F2pPNH8JjTutZkmgSm?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
+    <div class="line-space"><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/artist/4Z8W4fKeB5YxbusRsdQVPb?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
+    <div class="line-space"><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/3HFbH1loOUbqCyPsLuHLLh?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
+    <div class="line-space"><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/35SRuRfp5BvD1yArmXKNHO?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
+    <div class="line-space"><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/artist/72X6FHxaShda0XeQw3vbeF?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
+    <div class="line-space"><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/60TThBDrPpek5k520l0W0L?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
+    <div class="line-space"></div>
+    <div class="line-space"></div>
+  </div>
+</body>
+</html>
